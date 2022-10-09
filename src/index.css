@@ -1,0 +1,20 @@
+@font-face {
+  font-family:'ArialMT';
+  src: url('./assets/fonts/ArialMT/arialmt.ttf') format('ttf'), 
+       url('./assets/fonts/ArialMT/arialmt.woff2') format('woff2'),
+       url('./assets/fonts/ArialMT/arialmt.woff') format('woff');   
+}
+
+:root[data-theme="classic"] {
+  --bg-color: #252829;
+}
+
+:root[data-theme="vi"] {
+  --bg-color: white;
+}
+
+body {
+  margin: 0;
+  font-family: ArialMT, arial, serif;
+  background-color: var(--bg-color);
+}
